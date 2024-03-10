@@ -13,26 +13,23 @@ class Email:
     Represents an email object.
 
     Attributes:
-    - email_address
-    - subject_line
-    - email_content
+    - email_address: The recipient's email address.
+    - subject_line: The subject line of the email.
+    - email_content: The content of the email message.
+    - has_been_read: A flag indicating whether the email has been read.
 
     """
 
 
     def __init__(self, email_address, subject_line, email_content):
         """
-        This function initializes an email object with specified 
-        email address, subject line, email content, and sets a flag
-        indicating whether the email has been read.
+        Initializes an email object with the specified email address, 
+        subject line, and email content.
         
         Parameters:
-        - email_address: is used to store the email address of 
-          the recipient to whom the email will be sent. 
-        - subject_line:  is used to store the subject line of the email.
-          It is a string that represents the subject or title of email.
-        - email_content: is used to store the content of the email message
-          that will be sent. This could include the main body of the email,
+        - email_address: The recipient's email address.
+        - subject_line: The subject line of the email.
+        - email_content: The content of the email message.
         """
 
         self.email_address = email_address
@@ -42,8 +39,8 @@ class Email:
 
     def mark_as_read(self):
         """
-        This function sets the `has_been_read`
-        attribute to True. Mark the email as read
+        Marks the email as read by setting the 'has_been_read' 
+        attribute to True.
         """
 
         self.has_been_read = True
