@@ -117,7 +117,7 @@ class EmailSimulator:
         """
 
 
-        clearscr()
+        clear_screen()
         title = " EMAIL SIMULATOR "
         print("="*(40-(len(title)//2)), title, "="*(40-(len(title)//2)))
         print("\n")
@@ -133,7 +133,7 @@ class EmailSimulator:
             print("\nOoops. Incorrect input..")
             
 
-def clearscr():
+def clear_screen():
     """This function clears the terminal screen."""
 
     os.system("cls||clear")
@@ -174,7 +174,7 @@ def main():
     email_simulator.populate_inbox()
 
     while True:
-        clearscr()
+        clear_screen()
         title = " EMAIL SIMULATOR "
         print("="*(40-(len(title)//2)), title, "="*(40-(len(title)//2)))
         print("\n")
@@ -188,7 +188,7 @@ def main():
         user_choice = get_input("\n\nEnter your choice: ")
 
         if user_choice == 1:
-            clearscr()
+            clear_screen()
             title = " EMAIL SIMULATOR "
             print("="*(40-(len(title)//2)), title, "="*(40-(len(title)//2)))
             print("\n")
@@ -198,7 +198,7 @@ def main():
             input("\n\nPlease press Enter to back to menu:")
 
         elif user_choice == 2:
-            clearscr()
+            clear_screen()
             title = " EMAIL SIMULATOR "
             print("="*(40-(len(title)//2)), title, "="*(40-(len(title)//2)))
             print("\n")
@@ -212,7 +212,7 @@ def main():
             break
 
         else:
-            clearscr()
+            clear_screen()
             print("\nOoops. Incorrect input.")
             input("\n\nPlease press Enter to back to menu:")
 
